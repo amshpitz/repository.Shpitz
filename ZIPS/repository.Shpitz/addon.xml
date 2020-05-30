@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.Shpitz" name="Shpitz repo" version="1.0.0" provider-name="Shpitz">
+	<extension point="xbmc.addon.repository" name="Shpitz repo">
+		<info compressed="false">https://raw.githubusercontent.com/amshpitz/repo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/amshpitz/repo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/amshpitz/repo/master/zips</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Shpitz Repo</summary>
+		<description>Shpitz Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
