@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
+<!--          from out zip folder         -->
 <!--          plugin.video            -->
 
 
@@ -168,49 +168,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.telemedia"                                                                                                                                    
-	   name="Telemedia"                                                 
-	   version="2.0.4"                                                                                                                                        
-	   provider-name="Pavel Durov">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Netflix Style</summary>
-    <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.telemedia"                                                                                                                                    
-	   name="Telemedia"                                                 
-	   version="2.0.4"                                                                                                                                        
-	   provider-name="Pavel Durov">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-
-	<import addon="script.module.pyxbmct" version="1.1.4" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he">Netflix Style</summary>
-    <description lang="he">Telegram media for kodi</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 
 <addon id="plugin.video.Vodil" name="Vod IL" version="1.3.6" provider-name="kodi senyor">
   <requires>
@@ -249,6 +206,51 @@
     <description lang="he">Telegram media for kodi</description>
     <platform>all</platform>
   </extension>
+</addon>
+
+
+
+<!--          plugin.program            -->
+
+
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
+	<requires>
+	<import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.metahandler" optional="true"/>
+	</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio image executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+	<description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+	<platform>all</platform>
+	<language>en</language>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+	<website/>
+	<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+	<email>seanpoyser at gmail.com</email>
+	<news> 1.0.59: 29th May 2017 - 'Now playing' text now defined by SF due to skin variations </news>
+	</extension>
+	<extension point="kodi.context.item">
+	<menu id="kodi.core.main">
+	<item library="capture.py">
+	<label>$ADDON[plugin.program.super.favourites 30002]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+	</item>
+	<item library="menu_addtofaves.py">
+	<label>$ADDON[plugin.program.super.favourites 30047]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+	</item>
+	<item library="menu_download.py">
+	<label>$ADDON[plugin.program.super.favourites 30259]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+	</item>
+	</menu>
+	</extension>
 </addon>
 
 
@@ -376,6 +378,22 @@
     </extension>
 </addon>
 
+<addon id="repository.jafar" name="jafar" version="1.0.0" provider-name="jafar">
+	<extension point="xbmc.addon.repository" name="jafar">
+		<info compressed="false">http://cha1m.com/dark/jafar/zips/addons.xml</info>
+		<checksum>http://cha1m.com/dark/jafar/zips/addons.xml.md5</checksum>
+		<datadir zip="true">http://cha1m.com/dark/jafar/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>jafar</summary>
+		<description>jafar</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+
+<!--          Skins        -->
+
 <addon id="skin.blackglassnova.lahav" version="5.10.1" name="Black Glass Nova Lahav Mod" provider-name="Tgx-Lahav">
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>
@@ -396,45 +414,9 @@
     <extension point="xbmc.addon.metadata">
         <summary lang="de">Von MediaPortal portiert, ist Black Glass Nova ein einfach zu bedienendes und ein an Fankunst orientiertes Skin.</summary>
         <summary lang="en">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
-        <summary lang="en_AU">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
-        <summary lang="en_NZ">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
         <summary lang="en_US">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</summary>
-        <summary lang="es">Portado desde MediaPortal, Black Glass Nova es una piel facil de usar hecha para fanart</summary>
-        <summary lang="fr_CA">Porté de MediaPortal, Black Glass Nova est un habillage simple à utiliser et consacré au fanart.</summary>
-        <summary lang="he">המעטפת Black Glass Nova שבמקור נוצרה עבור MediaPortal, הינה קלה לשימוש, עושה שימוש רב בפאנארט ומותאמת במיוחד למסכים באבחנת Full HD.</summary>
-        <summary lang="hu">A MediaPortal portolása, Black Glass Nova egy könnyen használható fanart orientált felszín.</summary>
-        <summary lang="it">Trasferita da MediaPortal, Black Glass Nova è una skin facile da utilizzare e orientata alle fanart, progettata per TV Full HD.</summary>
-        <summary lang="ko">MediaPortal에서 포팅된 Black Glass Nova는 사용하기 쉽고 팬아트를 지원하는 스킨입니다.</summary>
-        <summary lang="lt">Perkeltas iš MediaPortal, 'Black Glass Nova' paprasta naudotis ir orentuotas į FanArt.</summary>
-        <summary lang="ms">Diambil dari  MediaPortal, Black Glass Nova merupakan kulit berorientasikan seni peminat yang mudah digunakan.</summary>
-        <summary lang="nl">Geport van MediaPortal, Black Glass Nova is een gemakkelijk in gebruik zijnde en fan-art georiënteerde skin.</summary>
-        <summary lang="pl">Przeniesiona z programu MediaPortal, Black Glass Nova jest łatwą w użyciu i skupioną na prezentacji fototapet skórą, która została zaprojektowana pod kątem wyświetlania na ekranach Full HD.</summary>
-        <summary lang="pt">Convertido do MediaPortal, Black Glass Nova é um tema fácil de usar e orientado para uso de fanart.</summary>
-        <summary lang="pt_BR">Portada do MediaPortal, a Black Glass Nova é uma skin fácil de usar e orientada a fanart.</summary>
-        <summary lang="ru">Портирована с MediaPortal, Black Glass Nova - это простая в использовании и ориентированная на фанарты обложка.</summary>
-        <summary lang="sv">Black Glass Nova är ett lätthanterat och fanart orienterat skal som är porterat från MediaPortal.</summary>
-        <summary lang="zh">由MediaPortal移植而来，Black Glass Nova 是一个面向易用和同人画的皮肤。</summary>
-        <description lang="de">Von MediaPortal portiert, ist Black Glass Nova ein einfach zu bedienendes und ein an Fankunst orientiertes Skin.</description>
-        <description lang="el">Προερχόμενο από το MediaPortal, το Black Glass Nova είναι ένα εύκολο στη χρήση κέλυφος, με προσανατολισμό στα fanart.</description>
-        <description lang="en">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
-        <description lang="en_AU">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
-        <description lang="en_NZ">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
         <description lang="en_US">Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.</description>
-        <description lang="es">Portado desde MediaPortal, Black Glass Nova es una piel facil de usar hecha para fanart</description>
-        <description lang="fr_CA">Porté de MediaPortal, Black Glass Nova est un habillage simple à utiliser et consacré au fanart.</description>
         <description lang="he">המעטפת Black Glass Nova שבמקור נוצרה עבור MediaPortal, הינה קלה לשימוש, עושה שימוש רב בפאנארט ומותאמת במיוחד למסכים באבחנת Full HD.</description>
-        <description lang="hu">A MediaPortal portolása, Black Glass Nova egy könnyen használható fanart orientált felszín.</description>
-        <description lang="it">Trasferita da MediaPortal, Black Glass Nova è una skin facile da utilizzare e orientata alle fanart, progettata per TV Full HD.</description>
-        <description lang="ko">MediaPortal에서 포팅된 Black Glass Nova는 사용하기 쉽고 팬아트를 지원하는 스킨입니다.</description>
-        <description lang="lt">Perkeltas iš MediaPortal, 'Black Glass Nova' paprasta naudotis ir orentuotas į FanArt.</description>
-        <description lang="ms">Diambil dari  MediaPortal, Black Glass Nova merupakan kulit berorientasikan seni peminat yang mudah digunakan.</description>
-        <description lang="nl">Geport van MediaPortal, Black Glass Nova is een gemakkelijk in gebruik zijnde en fan-art georiënteerde skin.</description>
-        <description lang="pl">Przeniesiona z programu MediaPortal, Black Glass Nova jest łatwą w użyciu i skupioną na prezentacji fototapet skórą, która została zaprojektowana pod kątem wyświetlania na ekranach Full HD.</description>
-        <description lang="pt">Convertido do MediaPortal, Black Glass Nova é um tema fácil de usar e orientado para uso de fanart.</description>
-        <description lang="pt_BR">Portada do MediaPortal, a Black Glass Nova é uma skin fácil de usar e orientada a fanart.</description>
-        <description lang="ru">Портирована с MediaPortal, Black Glass Nova - это простая в использовании и ориентированная на фанарты обложка.</description>
-        <description lang="sv">Black Glass Nova är ett lätthanterat och fanart orienterat skal som är porterat från MediaPortal.</description>
-        <description lang="zh">由MediaPortal移植而来，Black Glass Nova 是一个面向易用和同人画的皮肤。</description>
         <disclaimer lang="en">This skin does not work on Apple Tv 2</disclaimer>
         <disclaimer lang="it">Questa skin non funziona su Apple Tv 2</disclaimer>
         <license>Creative Commons Attribution-ShareAlike 3.0 Unported License</license>
