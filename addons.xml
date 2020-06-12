@@ -320,6 +320,25 @@
 <!--          plugin.program            -->
 
 
+<addon id="plugin.program.Chameleon"                                                                                                                                    
+	   name=" [COLOR deeppink][B]CHAME[COLOR springgreen][B]LEON[/COLOR][/B][COLOR yellow][B] WIZ[/COLOR][/B][COLOR orangered][B]ARD[/COLOR][/B]"                                                 
+	   version="10.4.3"                                                                                                                                        
+	   provider-name="[COLOR orange][B]CHAMELEON[/COLOR][/B]">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" optional="true" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">CHAMELEON WIZARD</summary>
+    <description lang="he">"[COLOR yellow][B]CTVP 2019[/COLOR][/B]"</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
 	<requires>
