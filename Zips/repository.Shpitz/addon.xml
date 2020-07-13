@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.Shpitz" name="kodi Shpitz repository" version="1.0.7" provider-name="Shpitz">
-	<extension point="xbmc.addon.repository" name="kodi Shpitz repository">
-			<info compressed="false">https://raw.githubusercontent.com/amshpitz/repository.Shpitz/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/amshpitz/repository.Shpitz/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://github.com/amshpitz/repository.Shpitz/raw/master/Zips/</datadir>
+<addon id="repository.Shpitz" name="Shpitz repository" version="1.0.8" provider-name="Shpitz">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+	<extension point="xbmc.addon.repository" name="Shpitz repository">
+		<dir>
+		<info compressed="false">https://raw.githubusercontent.com/amshpitz/repository.Shpitz/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/amshpitz/repository.Shpitz/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/amshpitz/repository.Shpitz/raw/master/Zips/</datadir>
+		</dir>
 	</extension>
+	
+	
 	<extension point="xbmc.addon.metadata">
-		<summary lang="en">kodi- amos Shpitz repo</summary>
+		<summary lang="en">kodi- Shpitz repo</summary>
 		<description lang="en">kodi- Shpitz repo</description>
 		<platform>all</platform>
 	</extension>
