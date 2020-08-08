@@ -452,6 +452,7 @@
 
 <!--          plugin.program            -->
 
+
 <addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.4" provider-name="Shpitz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
