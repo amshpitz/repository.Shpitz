@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.4" provider-name="Shpitz">
+<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.5" provider-name="Shpitz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
