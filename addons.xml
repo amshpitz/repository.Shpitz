@@ -730,7 +730,7 @@
 </addon>
 
 
-<addon id="repository.Shpitz" name="Shpitz repository" version="1.0.8" provider-name="Shpitz">
+<addon id="repository.Shpitz" name="Shpitz repository" version="1.0.9" provider-name="Shpitz">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
