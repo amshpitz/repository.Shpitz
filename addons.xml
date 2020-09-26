@@ -48,27 +48,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.MyYoutube"                                                                                                                                    
-	   name="MyYoutube"                      
-	   version="1.1.5"                                                                                                                                        
-	   provider-name="Thunder">
-	   <requires>
-    <import addon="script.module.urlresolver"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="he"></summary>
-    <description lang="he">Youtube player</description>
-    <platform>all</platform>
-  </extension>
-</addon>
 
 <addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.0" provider-name="Sdarot">
     <requires>
@@ -564,7 +543,7 @@
 
 
 
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.1.5.2" provider-name="Sbs">
+<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs Flash" version="2.1.5.2" provider-name="Shpitz_Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
@@ -583,7 +562,25 @@
   </extension>
 </addon>
 
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.1"
+       provider-name="Subs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
 
+  </requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
 
 <!--          repository            -->
 
@@ -934,6 +931,47 @@
 [COLOR yellow]--[/COLOR][I] Added OpenWizard repository.[/I]
 [COLOR yellow]--[/COLOR][I] Added Auramod repository.[/I]
 		</news>
+	</extension>
+</addon>
+
+<addon id="repository.skinbase.18" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 18" version="1.1.6" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
+	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
+	<dir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/kodi_18_skins/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/kodi_18_skins/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/kodi_18_skins/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/addons18/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/addons18/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/addons18/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/repos/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/repos/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/repos/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>[COLOR orange]G[/COLOR]uido[COLOR orange]s[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Repo</summary>
+<description lang="de_DE">In Guidos SKINBASE findet ihr Skins für die Kodi Versionen von 16 bis 19 aus aller Welt.
+Die Skins sind für die jeweiligen Kodi Versionen farblich markiert. Des weiteren findet ihr auch weitere Repos sowie alle Addons Abhängikeiten in der Repo die für die Skins benötigt werden.
+Die SkinBase wird ständig erweitert und verbessert. Hinzugekommen sind Skins mit Topics Loader , diese sind EXTRA mit Roter schrift versehen und ermöglichen mit einem Skin unzählige Themen oder Hintergrundbilder zu wechseln. Viel Spass wünschen euch Guido und sowie das SKINBASE TEAM.</description>
+		<description lang="en_GB">In Guidos SKINBASE you will find skins for the Kodi versions from 16 to 19 from all over the world.
+The skins are color-coded for the respective Kodi versions. Furthermore, you will also find other repos and all addons dependencies in the repo that are required for the skins.
+The SkinBase is constantly being expanded and improved. Added to this are skins with Topics Loader, these are EXTRA with red letters and allow you to change countless themes or background images with one skin. Guido and the SKINBASE TEAM wish you lots of fun.</description>
+        <platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot001.jpg</screenshot>
+			<screenshot>resources/screenshot002.jpg</screenshot>
+			<screenshot>resources/screenshot003.jpg</screenshot>
+			<screenshot>resources/screenshot004.jpg</screenshot>
+			<screenshot>resources/screenshot005.jpg</screenshot>
+		</assets>
+        <forum>https://www.facebook.com/groups/716337198478240/</forum>
+        <website>https://www.facebook.com/groups/716337198478240/</website>
 	</extension>
 </addon>
 
