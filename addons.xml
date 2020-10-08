@@ -399,7 +399,7 @@
 </addon>
 
 
-<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.6" provider-name="Shpitz">
+<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.7" provider-name="Shpitz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -543,7 +543,7 @@
 
 
 
-<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs Flash" version="2.1.5.2" provider-name="Shpitz_Sbs">
+<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs Flash" version="2.1.7" provider-name="Shpitz_Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
