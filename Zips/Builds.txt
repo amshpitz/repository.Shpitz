@@ -2,7 +2,7 @@ id="plugin.program.shpitzwiz"
 version="1.7"
 zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjXJP-eL"
 
-name="AuraModSlim 18.8"
+name="AuraModSlim V2 18.8"
 version="1.0"
 url="https://www.dropbox.com/s/dtpt5toqkp1emju/AuraModSlim.zip?dl=1"
 gui="http://"
