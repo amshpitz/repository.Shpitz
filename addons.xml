@@ -49,32 +49,6 @@
 </addon>
 
 
-<addon id="plugin.video.sdarot.tv" name="Sdarot.Tv" version="2.6.0" provider-name="Sdarot">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.xbmcswift2" version="2.4.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.urllib3" version="1.22" optional="true"/>
-        <import addon="repository.sdarot" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="sdarottv.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <minversion>31632</minversion>
-        <summary lang="en">Watch Sdarot.Tv video contents.</summary>
-        <summary lang="he">סדרות מתוך האתר Sdarot.Tv</summary>
-        <description lang="en">Sdarot is a site that deals with direct viewing of various series from Israel and abroad. All series are on site contain subtitles, Israeli series also has translation sometimes. sdarot lets watch thousands of different series and tens of thousands of different episodes free! The site sdarot Updated on a daily base and allows direct viewing of innovative technologies while ensuring maximum quality without compromise.</description>
-        <description lang="he">סדרות הינו אתר העוסק בצפייה ישירה של סדרות שונות מהארץ ומחו"ל. כל הסדרות מח"ול הנמצאות באתר סדרות מכילות תרגום לעברית, גם בסדרות הישראליות יש תרגום לעתים. אתר סדרות מאפשר צפייה ישירה חינם לאלפי סדרות שונות ועשרות אלפי פרקים שונים בחינם! אתר סדרות מתעדכן על בסיס יומי ומאפשר צפייה ישירה בטכנולוגיות חדשניות תוך הקפדה על איכות מקסימלית ללא פשרות.</description>
-        <news>[B]Version 2.5.9[/B][CR]Changes inside addon to fit site changes.</news>
-        <supportedcontent>
-        <content>tvshows</content>
-        </supportedcontent>
-    </extension>
-</addon>
-
-
 <addon id="plugin.video.shpitzyoutube" name="ShpitzYouTube" version="1.0.8" provider-name="ShpitzTV">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -179,34 +153,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.10.1" provider-name="Bugatsinho">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="plugin.video.f4mTester" version="2.7.2"/>
-        <import addon="script.module.streamlink.base" version="2019.06.23"/>
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Sport365 originally made by GalAnonim</summary>
-    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://bugatsinho.github.io</website>
-    <twitter>@bugatsinho</twitter>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.png</fanart>
-  </assets>
-  <news>2.6.10 18-01-2020
-- Just fix regex issues.Streams could not play!</news>
-  </extension>
-</addon>
 
 <addon id="plugin.video.thecrew" version="0.0.91" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
@@ -543,7 +489,7 @@
 
 
 
-<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs Flash" version="2.1.7" provider-name="Shpitz_Sbs">
+<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs Flash" version="2.1.9" provider-name="Shpitz_Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
@@ -582,6 +528,8 @@
   </extension>
 </addon>
 
+
+
 <!--          repository            -->
 
 <addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
@@ -597,6 +545,32 @@
                 <platform>all</platform>
         </extension>
 </addon>
+
+<addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
+    <extension point="xbmc.addon.repository" name="Tikipeter's Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Tikipeter/repository.tikipeter/master/zip</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Tikipeter's Repository</summary>
+        <description>Unofficial add-ons repository</description>
+    </extension>
+</addon>
+
 
 <addon id="repository.thecrew" name="[COLOR orchid]THE CREW REPO[/COLOR]" provider-name="The Crew" version="0.3.1">
 	<requires>
@@ -737,19 +711,6 @@
     </extension>
 </addon>
 
-<addon id="repository.sdarot" name="[COLOR white][B]Sdarot[/B][/COLOR][COLOR white][B].Tv[/B][/COLOR] [COLOR white][B]Repo[/B][/COLOR]" version="1.0.3" provider-name="Sdarot">
-        <extension point="xbmc.addon.repository" name="Sdarot Repository">
-                <info compressed="false">http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml</info>
-                <checksum>http://raw.github.com/Sdarot/Repo-Sdarot/master/addons.xml.md5</checksum>
-                <datadir zip="true">http://raw.github.com/Sdarot/Repo-Sdarot/master/zip</datadir>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-                <summary>Sdarot.Tv Repository</summary>
-                <description>Sdarot.Tv Repository</description>
-                <disclaimer></disclaimer>
-                <platform>all</platform>
-        </extension>
-</addon>
 
 <addon id="repository.mbebe" name="mbebe" version="0.5" provider-name="mbebe">
 		<extension point="xbmc.addon.repository" name="mbebe">
@@ -864,13 +825,25 @@
 	</extension>
 </addon>
 
-<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.8" provider-name="Venom">
+<addon id="repository.venom" name="[COLOR red]Venom[/COLOR] Repository" version="1.12" provider-name="Venom">
 	<extension point="xbmc.addon.repository" name="Venom Repo">
 
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/123Venom/zips/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/123Venom/zips/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/123Venom/zips/master/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.myaccounts/master/zips/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/mr-kodi/repository.fenomscrapers/master/zips/</datadir>
 		</dir>
 
 		<dir>
@@ -883,12 +856,6 @@
 			<info compressed="false">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/skyfsza/repository.auramod/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/skyfsza/repository.auramod/master/</datadir>
-		</dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/a4k-openproject/repository.openscrapers/master/zips/</datadir>
 		</dir>
 
 		<dir>
@@ -910,9 +877,16 @@
 		</dir>
 
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/newt-sc/a4kSubtitles/master/packages/addons.xml.crc</checksum>
+			<datadir>https://github.com/newt-sc/a4kSubtitles/archive</datadir>
+			<artdir>https://github.com/a4k-openproject/a4kSubtitles/releases/download/v0.0.13</artdir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
 		</dir>
 
 	</extension>
@@ -927,9 +901,8 @@
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.8 - May 24, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added OpenWizard repository.[/I]
-[COLOR yellow]--[/COLOR][I] Added Auramod repository.[/I]
+[B][COLOR red]Update - v1.12 – Sept. 26, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] fix incorrect version bump.[/I]
 		</news>
 	</extension>
 </addon>
@@ -982,5 +955,39 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
 
 <!--          Skins        -->
 
+<addon id="skin.auramod" version="0.9.45.2" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="auramod,jurialmunkey,Cartmandos,marduklev,marcelveldt">
+    <requires>
+        <import addon="xbmc.gui" version="5.14.0"/>
+        <import addon="repository.marcelveldt" version="1.0.2"/>
+        <import addon="repository.jurialmunkey" version="1.2"/>
+        <import addon="script.skin.helper.service" version="1.1.24"/>
+        <import addon="script.skin.helper.widgets" version="1.0.0"/>
+        <import addon="script.skinshortcuts" version="1.0.20"/>
+        <import addon="script.image.resource.select" version="0.0.5"/>
+        <import addon="plugin.program.autocompletion" version="1.0.1"/>
+        <import addon="resource.images.moviegenreicons.transparent" version="0.0.6"/>
+    </requires>
+    <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1">
+        <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Mod of aura ,  Minimalistic. Customisable. Multiple Widgets.</summary>
+        <description lang="en">Aura is highly customisable skin with multiple widgets and a horizontal home menu. Aura combines the minimalism and rounded edges of Arctic Zephyr with the sleek customisability of Horizon and Titan Bingie. [COLOR cyan]Mods to Aura by skyfsza[/COLOR]</description>
+        <platform>all</platform>
+        <license>Creative Commons Attribution Non-Commercial Share-Alike 4.0</license>
+        <forum/>
+        <source/>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+            <screenshot>resources/screenshot-04.jpg</screenshot>
+            <screenshot>resources/screenshot-05.jpg</screenshot>
+        </assets>
+		<size>63989874</size>
+    </extension>
+</addon>
 
 </addons>
