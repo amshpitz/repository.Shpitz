@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.shpitzplayer"
+version="1.0.0"
+name="Shpitz Player"
+provider-name="Bones-Shpitz">
+<requires>
+  <import addon="xbmc.python" version="2.26.0"/>
+  <import addon="script.module.simplecache" version="1.0.11" />
+  <import addon="script.module.requests" version="2.9.1"/>
+  <import addon="script.module.pil" version="1.1.7"/>
+</requires>
+<extension point="xbmc.python.pluginsource" library="plugin.py">
+  <provides>video</provides>
+</extension>
+<extension point="xbmc.service" library="service.py" />
+<extension point="xbmc.python.script" library="script.py" />
+<extension point="kodi.context.item">
+  <menu id="kodi.core.main">
+    <item library="context-play.py">
+      <label>$ADDON[plugin.video.shpitzplayer 32146]</label>
+      <visible>[String.IsEqual(ListItem.dbtype,episode) + !String.IsEmpty(ListItem.Season) + !String.IsEmpty(ListItem.Episode)] | [String.IsEqual(ListItem.dbtype,movie)]</visible>
+    </item>
+    <item library="context-open.py">
+      <label>$ADDON[plugin.video.shpitzplayer 32147]</label>
+      <visible>String.IsEqual(ListItem.dbtype,episode) + !String.IsEmpty(ListItem.Property(tvshow.tmdb_id))</visible>
+    </item>
+    <menu>
+      <label>$ADDON[plugin.video.shpitzplayer 32145]</label>
+      <item library="context-watchlist.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32148]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + !String.IsEmpty(ListItem.Property(tmdb_id)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+      </item>
+      <item library="context-history.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32149]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + !String.IsEmpty(ListItem.Property(tmdb_id)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+      </item>
+      <item library="context-collection.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32150]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + !String.IsEmpty(ListItem.Property(tmdb_id)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+      </item>
+      <item library="context-library.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32151]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(ListItem.Property(tmdb_id)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow) | String.IsEqual(ListItem.dbtype,season)]</visible>
+      </item>
+      <item library="context-library-userlist.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32151]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + String.IsEqual(ListItem.Property(Item.Info),trakt_userlist)</visible>
+      </item>
+      <item library="context-addtouserlist.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32140]</label>
+        <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)] + [!String.IsEmpty(ListItem.Property(tmdb_id)) | !String.IsEmpty(ListItem.DBID)]</visible>
+      </item>
+      <item library="context-removefromuserlist.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32152]</label>
+        <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.TraktIsAuth)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.TraktUserSlug)) + !String.IsEmpty(ListItem.Property(Container.User_Slug)) + !String.IsEmpty(ListItem.Property(Container.List_Slug)) + String.IsEqual(Window(Home).Property(TMDbHelper.TraktUserSlug),ListItem.Property(Container.User_Slug))</visible>
+      </item>
+      <item library="context-refresh-item.py">
+        <label>$ADDON[plugin.video.shpitzplayer 32153]</label>
+        <visible>!String.IsEmpty(ListItem.Property(Container.Info)) + !String.IsEmpty(ListItem.Property(tmdb_id)) + [String.IsEqual(ListItem.dbtype,episode) | String.IsEqual(ListItem.dbtype,movie) | String.IsEqual(ListItem.dbtype,tvshow)]</visible>
+      </item>
+    </menu>
+  </menu>
+</extension>
+<extension point="xbmc.addon.metadata">
+  <summary lang="en_GB">Bone Player - Now With Trakt Support!</summary>
+  <summary lang="es_ES">Bone Player - ¡Ahora con soporte para Trakt!</summary>
+  <description lang="en_GB">Bone Player provides details about movies, tvshows and actors from TMDb. Users can access a variety of lists from TMDb and Trakt.</description>
+  <description lang="es_ES">Bone Player proporciona detalles sobre películas, programas de televisión y actores de TMDb. Los usuarios pueden acceder a una variedad de listas desde TMDb y Trakt.</description>
+  <disclaimer lang="en_GB">Provided by TheMovieDb and Trakt.</disclaimer>
+  <disclaimer lang="es_ES">Proporcionado por TheMovieDb y Trakt</disclaimer>
+  <license>GPL-3.0-or-later</license>
+  <website></website>
+  <forum>https://forum.kodi.tv/showthread.php?tid=345847</forum>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.jpg</fanart>
+    <screenshot>resources/screenshot-01.jpg</screenshot>
+    <screenshot>resources/screenshot-02.jpg</screenshot>
+  </assets>
+  <news>Better handling of auto updates</news>
+</extension>
+</addon>
