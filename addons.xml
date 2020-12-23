@@ -857,8 +857,6 @@ provider-name="Bones-Shpitz">
 		<datadir zip="true">https://github.com/amshpitz/repository.Shpitz/raw/master/Zips/</datadir>
 
 	</extension>
-	
-	
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">kodi- Shpitz repo</summary>
 		<description lang="en">kodi- Shpitz repo</description>
@@ -1026,11 +1024,6 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
         <website>https://www.facebook.com/groups/716337198478240/</website>
 	</extension>
 </addon>
-
-
-
-
-
 
 <!--          Skins        -->
 
