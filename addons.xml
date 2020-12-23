@@ -429,7 +429,7 @@ provider-name="Bones-Shpitz">
 </addon>
 
 
-<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.7" provider-name="Shpitz">
+<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.8" provider-name="Shpitz">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
