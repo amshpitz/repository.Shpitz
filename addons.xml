@@ -20,6 +20,28 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.kids_new"                                                                                                                                    
+	   name="[COLOR red][B]הכל לילדים[/B][/COLOR]"                                                 
+	   version="1.2.5"                                                                                                                                        
+	   provider-name="הכל לילדים">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+
+
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">הכל לילדים</summary>
+    <description lang="he">הכל לילדים</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.idanplus" name="עידן+ פלוס" version="2.7.0" provider-name="nil">
 		<requires>
 			<import addon="script.module.requests"/>
@@ -460,6 +482,34 @@ provider-name="Bones-Shpitz">
 
 
 <!--          service.subtitles            -->
+
+<addon id="script.module.7of9-live" name=" [B][COLOR lightseagreen]TVtap (Clone)[/COLOR][/B] (v2.5)" version="2.5" provider-name="SomeBody">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <summary lang="en_gb">Cloned for 7of9 users from RACC TvTap Module. All credit must go to anyone involved in the Original Code</summary>
+    <description lang="en_gb">Module for TvTap APK</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>Requires Kodi 18 Leia</source>
+  </extension>
+</addon>
+
 
 <addon id="context.elementum" name="Elementum Context Helper" version="0.0.3" provider-name="elgatito">
     <requires>
