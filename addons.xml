@@ -20,6 +20,31 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.CHICCO"                                                                                                                                    
+	   name="ציקו"                      
+	   version="6.5.0"                                                                                                                                        
+	   provider-name="CHICCO">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+	
+
+	
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">סרטים/סדרות</summary>
+    <description lang="en"></description>
+    <platform>all</platform>
+
+  </extension>
+</addon>
+
 <addon id="plugin.video.kids_new"                                                                                                                                    
 	   name="[COLOR red][B]הכל לילדים[/B][/COLOR]"                                                 
 	   version="1.2.5"                                                                                                                                        
@@ -42,46 +67,50 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.idanplus" name="עידן+ פלוס" version="2.8.3" provider-name="Fishenzon">
-	<requires>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.xmltodict"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]"/>
-	<extension point="xbmc.addon.metadata">
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-		<platform>all</platform>
-		<summary lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.</summary>
-		<description lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.[CR]אפשרויות שונות בהגדרות ההרחבה ובקליק ימני על פריט ברשימה.</description>
-		<news>- Fix for Kan 23 VOD. (Changes in website).[CR]- Removed Kan old radio stations. (Changes in website).[CR]- Added Kan Kids radio station.[CR]- Added Kan Kids podcasts.[CR]- Removed the option to load Kan VOD lists page by page (for slow devices).[CR]- Added an option to set how many pages to load to lists of Kan VOD. - default is 4 pages</news>
-		<supportedcontent>
-			<content>tvshows</content>
-		</supportedcontent>
-	</extension>
-</addon>
-
-
 <addon id="plugin.video.shadow"                                                                                                                                    
 	   name="Shadow"                                                 
-	   version="1.3.4"                                                                                                                                        
+	   version="2.4.5"                                                                                                                                        
 	   provider-name="Darkness">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
+	
   </requires>
   <extension point="xbmc.python.pluginsource"
             library="default.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">The single light in the Darkness, Thanks to Nixgates for some of his code</summary>
-    <description lang="en">All the media as fast as possiable</description>
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+	
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2019.12.29"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />   
+   <import addon="plugin.video.f4mTester" />
+   <import addon="script.module.slproxy" />
+  </requires>
+  <extension 
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service/streamlink_proxy.py" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil</summary>
+    <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+    <disclaimer lang="en">There can only be one.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <platform>all</platform>
   </extension>
 </addon>
@@ -108,33 +137,8 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.CHICCO"                                                                                                                                    
-	   name="ציקו"                      
-	   version="6.4.9.5"                                                                                                                                        
-	   provider-name="CHICCO">
-	   <requires>
-    <import addon="script.module.resolveurl" version="5.0.00"/>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.requests"/>
-	
 
-	
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">סרטים/סדרות</summary>
-    <description lang="en"></description>
-    <platform>all</platform>
-
-  </extension>
-</addon>
-
-
-<addon id="plugin.video.thecrew" version="0.0.91" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
+<addon id="plugin.video.thecrew" version="0.0.97" name="[COLOR orchid]THE CREW[/COLOR]" provider-name="The Crew">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.thecrew" />
@@ -167,19 +171,19 @@
     </extension>
 </addon>
 
-
-<addon id="plugin.video.PLsportowo" name="Sportowa TV" version="2.0" provider-name="mbebe">
+<addon id="plugin.video.PLsportowo" name="Sportowa TV" version="2.0.6" provider-name="mbebe">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.requests" />
-		<import addon="script.module.parsedom" version="2.5.2"/>
 		<import addon="script.module.inputstreamhelper" version="0.3.3"/>
 		<import addon="script.module.resolveurl" version="5.0.00"/>
-        <import addon="script.module.streamlink.base" />
+		<import addon="script.module.streamlink.base" />
+		<import addon="script.module.pytz" version="2014.2"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="maintv.py">
 		<provides>video</provides>
 	</extension>
+	<extension point="xbmc.service" library="serverHTTP.py" />
 	<extension point="xbmc.addon.metadata">
 		<description>Wydarzenia sportowe</description>
 		<disclaimer>https://github.com/mbebe/blomqvist</disclaimer>
@@ -195,30 +199,58 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="4.0.7" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.Rising.Tides" 
+	name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR]" 
+	version="1.4.22.3" 
+	provider-name="[COLOR turquoise][B]mullafabz[/B][/COLOR]">
+  <requires>
+	<import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.simple.downloader" optional="false"/>
+	<import addon="script.module.beautifulsoup" version="3.2.1"/>
+	<import addon="script.module.beautifulsoup4"/>
+	<import addon="script.module.requests"/>
+	<import addon="script.module.httplib2"/>
+	<import addon="script.module.resolveurl" optional="false"/>
+	<import addon="script.module.liveresolver" version="0.1.50"/>
+	<import addon="script.module.simplejson"/>
+	<import addon="script.common.plugin.cache" version="2.5.2"/>
+	<import addon="script.module.metahandler" version="2.5.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Watch many sports and events from the world</summary>
+    <description lang="en">I don't have any affiliation with the content provider nor KODI.Content freely available on the internet.More info at [COLOR lime][B]@mullafabz[/B][/COLOR]</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.1">
 	<requires>
-		<import addon="xbmc.python" version="2.19.0"/>
-		<import addon="script.module.requests" version="2.19.1"/>
-		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
-		<import addon="script.module.metahandler" version="2.9.0"/>
-		<import addon="plugin.video.youtube" version="6.2.0"/>
-		<import addon="script.module.resolveurl" version="5.0.27"/>
-		<import addon="script.module.openscrapers"/>
-		<import addon="script.module.addon.signals" version="0.0.3"/>
-		<import addon="context.venom" version="1.0.0"/>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="context.venom" version="1.0.0" />
+		<import addon="script.module.myaccounts" version="1.0.0" />
+		<import addon="script.module.fenomscrapers" version="1.0.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+		<import addon="script.module.beautifulsoup4" version="4.5.3" />
+		<import addon="script.module.metahandler" version="2.9.0" />
+		<import addon="plugin.video.youtube" version="6.2.0" />
+		<import addon="script.module.addon.signals" version="0.0.3" />
 	</requires>
-	<extension point="xbmc.python.pluginsource" library="venom.py">
+	<extension library="venom.py" point="xbmc.python.pluginsource">
 		<provides>video</provides>
 	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup"/>
-	<extension point="xbmc.python.module" library="resources/lib/"/>
+	<extension library="service.py" point="xbmc.service" start="startup" />
+	<extension library="resources/lib/" point="xbmc.python.module" /> 
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
+		<reuselanguageinvoker>true</reuselanguageinvoker>
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-		<forum/>
+		<forum />
 		<website>https://github.com/123Venom/plugin.video.venom</website>
 		<source>https://github.com/123Venom/plugin.video.venom</source>
 		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
@@ -230,18 +262,35 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.7.4 - June 27, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added new ability to show "Help" file text for settings options
-    deemed confusing.  I will add more upon request[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue with one item in Trakt progress not showing
-    show title.[/I]
-[COLOR yellow]--[/COLOR][I] Added option for multi episode lists to show or not show
-     unwatched count.  See new Help for more info[/I]
+[B][COLOR red]Update - v4.3.1 - Dec. 18, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed Anime Movies and TV Shows menu not advancing to
+    next page.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed RD caching of uncached torrents, stalled at file select.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed RD "My Downloads" not loading results.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Trakt sync for "Scrobble Reset" items not sync'd to
+    other devices.[/I]
+[COLOR yellow]--[/COLOR][I] Added ability to auto start playback upon completion of
+    caching uncached torrent.[/I]
+[COLOR yellow]--[/COLOR][I] Added new "yes-no" dialog when cancelling caching of
+    uncached torrent.  Now user has the option to
+    close progress dialog but allow premium service
+    to continue it's download, or close and cancel both.[/I]
+[COLOR yellow]--[/COLOR][I] Request to add debrid account expiry notification.  This
+    has now been added to the "My Accounts" addon.[/I]
+[COLOR yellow]--[/COLOR][I] Removed "Multi-Line Source Select" setting.  This is now
+    the hard coded default.[/I]
+[COLOR yellow]--[/COLOR][I] Uncached torrents now has it's own color setting choice
+    under "Torrent Settings".[/I]
+[COLOR yellow]--[/COLOR][I] Due to settings changes the entire "Source Options"
+    category has be rearranged.  A new heading has been
+    added to better group settings based on the flow of
+    scraping process and source selection.  It is advisable
+    to review and save settings.[/I]
 		</news>
 	</extension>
 </addon>
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.62" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.64" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -277,6 +326,70 @@
             <screenshot>resources/screenshots/webui.png</screenshot>
         </assets>
     </extension>
+</addon>
+
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.23">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="script.module.tikimeta" version="1.0.0" />
+        <import addon="script.tiki.artwork" version="1.0.0" />
+        <import addon="script.tiki.skins" version="1.0.0" />
+        <import addon="script.module.myaccounts" version="0.0.0" />
+        <import addon="script.module.fenomscrapers" />
+    </requires>
+    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service" start="startup" />
+    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary>
+            Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only. You must have a debrid service to use this add-on without Furk/Easynews.
+        </summary>
+        <description>
+Specializes in Furk and Easynews(web) account access.
+Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
+You must have a debrid service to use this add-on without Furk/Easynews.
+This add-on is intended for advanced Kodi users only.
+Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
+        </description>
+        <platform>all</platform>
+        <disclaimer>
+        </disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news>
+INFO: For latest changes see Changelog within Tools of add-on.
+        </news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.idanplus" name="עידן+ פלוס" version="2.8.3" provider-name="Fishenzon">
+	<requires>
+		<import addon="script.module.requests"/>
+		<import addon="script.module.xmltodict"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="resources/lib/service.py" start="[login|startup]"/>
+	<extension point="xbmc.addon.metadata">
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+		<platform>all</platform>
+		<summary lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.</summary>
+		<description lang="en">צפיה בערוצי עידן פלוס ובתכניות מהאתרים הרשמיים.[CR]אפשרויות שונות בהגדרות ההרחבה ובקליק ימני על פריט ברשימה.</description>
+		<news>- Fix for Kan 23 VOD. (Changes in website).[CR]- Removed Kan old radio stations. (Changes in website).[CR]- Added Kan Kids radio station.[CR]- Added Kan Kids podcasts.[CR]- Removed the option to load Kan VOD lists page by page (for slow devices).[CR]- Added an option to set how many pages to load to lists of Kan VOD. - default is 4 pages</news>
+		<supportedcontent>
+			<content>tvshows</content>
+		</supportedcontent>
+	</extension>
 </addon>
 
 
@@ -580,7 +693,7 @@ provider-name="Bones-Shpitz">
     </extension>
 </addon>
 
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.2" provider-name="Sbs">
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.2.1" provider-name="Sbs">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
@@ -619,6 +732,31 @@ provider-name="Bones-Shpitz">
   </extension>
 </addon>
 
+<addon id="script.module.tikimeta" version="1.2.10" name="Tiki Meta Module" provider-name="Tiki">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="xbmc.python" version="2.19.0"/>
+    </requires>
+    <extension library="lib/default.py" point="xbmc.python.pluginsource">
+        <provides>executable</provides>
+    </extension>
+    <extension library="lib/services.py" point="xbmc.service" start="startup" />
+    <extension library="lib" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary>Metadata for Addons</summary>
+        <description>Metadata for Addons</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news>
+        </news>
+    </extension>
+</addon>
+
 
 <!--          repository            -->
 
@@ -640,6 +778,46 @@ provider-name="Bones-Shpitz">
 	</extension>
 </addon>
 
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
+    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+        <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+        <hashes>false</hashes>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/python-koding/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Bugatsinho repository</summary>
+        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
         <extension point="xbmc.addon.repository" name="CPTV">
                 <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
@@ -652,6 +830,26 @@ provider-name="Bones-Shpitz">
                 <disclaimer></disclaimer>
                 <platform>all</platform>
         </extension>
+</addon>
+
+<addon id="repository.Rising.Tides" name="[COLOR red][B]R[/B][/COLOR][COLOR white][B]ising[/B][/COLOR] [COLOR pink][B]T[/B][/COLOR][COLOR white][B]ides[/B][/COLOR] Repository" version="1.1" provider-name="[COLOR turquoise][B]@mullafabz[/B][/COLOR]">
+	<extension point="xbmc.addon.repository" name="[COLOR red][B]R[/B][/COLOR]ising [COLOR pink][B]T[/B][/COLOR]ides Repository">
+	<dir>
+		<info compressed="false">http://mullafabz.xyz/Plugins/addons.xml</info>
+		<checksum>http://mullafabz.xyz/Plugins/addons.xml.md5</checksum>
+		<datadir zip="true">http://mullafabz.xyz/Plugins/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>All types of Contents</summary>
+		<description>Find any type of content</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="repository.tikipeter" name="Tikipeter's Repository" version="0.0.6" provider-name="Tikipeter">
@@ -985,22 +1183,22 @@ provider-name="Bones-Shpitz">
 	</extension>
 </addon>
 
-<addon id="repository.skinbase.18" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 18" version="1.1.6" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
+<addon id="repository.skinbase.18" name="[COLOR orange]G[/COLOR]UIDO[COLOR orange]S[/COLOR] [COLOR orange]S[/COLOR]KINBAS[COLOR orange]E[/COLOR] Only Skins for 18" version="1.1.20" provider-name="[COLOR orange]GUIDO[/COLOR] | [COLOR skyblue]Kodiman[/COLOR] | [COLOR orange]HSK-DE[/COLOR]">
 	<extension point="xbmc.addon.repository" name="GUIDOS SKINBASE REPO">
 	<dir>
-		<info compressed="false">https://downloads.guidos-skinbase.de/kodi_18_skins/addons.xml</info>
-		<checksum>https://downloads.guidos-skinbase.de/kodi_18_skins/addons.xml.md5</checksum>
-		<datadir zip="true">https://downloads.guidos-skinbase.de/kodi_18_skins/</datadir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/skins18/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/skins18/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/skins18/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://downloads.guidos-skinbase.de/skins18.1/addons.xml</info>
+		<checksum>https://downloads.guidos-skinbase.de/skins18.1/addons.xml.md5</checksum>
+		<datadir zip="true">https://downloads.guidos-skinbase.de/skins18.1/</datadir>
 	</dir>
 	<dir>
 		<info compressed="false">https://downloads.guidos-skinbase.de/addons18/addons.xml</info>
 		<checksum>https://downloads.guidos-skinbase.de/addons18/addons.xml.md5</checksum>
 		<datadir zip="true">https://downloads.guidos-skinbase.de/addons18/</datadir>
-	</dir>
-	<dir>
-		<info compressed="false">https://downloads.guidos-skinbase.de/repos/addons.xml</info>
-		<checksum>https://downloads.guidos-skinbase.de/repos/addons.xml.md5</checksum>
-		<datadir zip="true">https://downloads.guidos-skinbase.de/repos/</datadir>
 	</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
@@ -1015,16 +1213,23 @@ The SkinBase is constantly being expanded and improved. Added to this are skins 
 		<assets>
 			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot001.jpg</screenshot>
-			<screenshot>resources/screenshot002.jpg</screenshot>
-			<screenshot>resources/screenshot003.jpg</screenshot>
-			<screenshot>resources/screenshot004.jpg</screenshot>
-			<screenshot>resources/screenshot005.jpg</screenshot>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+			<screenshot>resources/screenshot-06.jpg</screenshot>
+			<screenshot>resources/screenshot-07.jpg</screenshot>
+			<screenshot>resources/screenshot-08.jpg</screenshot>
+			<screenshot>resources/screenshot-09.jpg</screenshot>
+			<screenshot>resources/screenshot-10.jpg</screenshot>
 		</assets>
         <forum>https://www.facebook.com/groups/716337198478240/</forum>
         <website>https://www.facebook.com/groups/716337198478240/</website>
 	</extension>
 </addon>
+
+
 
 <!--          Skins        -->
 

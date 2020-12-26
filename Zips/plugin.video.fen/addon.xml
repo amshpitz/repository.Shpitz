@@ -1,0 +1,39 @@
+<addon id="plugin.video.fen" name="Fen" provider-name="Tiki" version="1.8.23">
+    <requires>
+        <import addon="script.module.requests" version="2.19.1" />
+        <import addon="script.module.tikimeta" version="1.0.0" />
+        <import addon="script.tiki.artwork" version="1.0.0" />
+        <import addon="script.tiki.skins" version="1.0.0" />
+        <import addon="script.module.myaccounts" version="0.0.0" />
+        <import addon="script.module.fenomscrapers" />
+    </requires>
+    <extension library="resources/lib/fen.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+    </extension>
+    <extension library="resources/lib/service.py" point="xbmc.service" start="startup" />
+    <extension library="resources/lib/" point="xbmc.python.module" />
+    <extension point="xbmc.addon.metadata">
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <summary>
+            Specializes in Furk and Easynews. This add-on is intended for advanced Kodi users only. You must have a debrid service to use this add-on without Furk/Easynews.
+        </summary>
+        <description>
+Specializes in Furk and Easynews(web) account access.
+Also utilizes Fenomscrapers for those without a Furk or Easynews(web) account.
+You must have a debrid service to use this add-on without Furk/Easynews.
+This add-on is intended for advanced Kodi users only.
+Please Note: This add-on is NOT an Exodus fork, and as such will behave differently to an Exodus fork.
+        </description>
+        <platform>all</platform>
+        <disclaimer>
+        </disclaimer>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+        </assets>
+        <news>
+INFO: For latest changes see Changelog within Tools of add-on.
+        </news>
+    </extension>
+</addon>
