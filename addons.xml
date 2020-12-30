@@ -478,6 +478,23 @@ provider-name="Bones-Shpitz">
 
 <!--          plugin.program            -->
 
+
+
+<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.9" provider-name="Shpitz">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="startup.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Shpitz Wizard</summary>
+    <description lang="en">Shpitz Wizard allows you to get access to the latest Shpitz Builds.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.close.kodi" name="[COLOR red] Force Close Kodi[/COLOR] " version="3.1.3" provider-name="Based_Skid">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -518,22 +535,6 @@ provider-name="Bones-Shpitz">
 
 
 	</news>
-  </extension>
-</addon>
-
-
-<addon id="plugin.program.shpitzwiz" name="Shpitz Wizard" version="1.8" provider-name="Shpitz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.service" library="startup.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Shpitz Wizard</summary>
-    <description lang="en">Shpitz Wizard allows you to get access to the latest Shpitz Builds.</description>
-    <platform>all</platform>
   </extension>
 </addon>
 
