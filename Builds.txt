@@ -3,7 +3,7 @@ version="1.9"
 zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjXJP-eL"
 
 name="ShpitzSilvo Mod V2 18.9"
-version="1.0"
+version="2.0"
 url="https://www.dropbox.com/s/t0xd29a8558ykg5/ShpitzSilvoMod2.zip?dl=1"
 gui="http://"
 kodi="18.9"
