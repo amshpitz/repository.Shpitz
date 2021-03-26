@@ -927,7 +927,7 @@ provider-name="jurialmunkey">
     </extension>
 </addon>
 
-<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.2.6" provider-name="Sbs">
+<addon id="service.subtitles.Shpitz_Subs" name="Shpitz Subs" version="2.2.6" provider-name="Sbs,Shpitz">
   <requires>
     <import addon="xbmc.python" version="2.14.0"/>
 	<import addon="script.module.requests" version="2.9.1" />
