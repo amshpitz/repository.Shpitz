@@ -790,7 +790,7 @@ provider-name="jurialmunkey">
 
 <!--          service.subtitles            -->
 
-<addon id="script.module.7of9-live" name=" [B][COLOR lightseagreen]TVtap (Clone)[/COLOR][/B] (v2.5)" version="2.5" provider-name="SomeBody">
+<addon id="script.module.7of9-live" name=" [B][COLOR lightseagreen]TVtap (Clone)[/COLOR][/B]" version="2.6" provider-name="SomeBody">
   <requires>
     <import addon="xbmc.python" version="2.26.0"/>
     <import addon="script.module.pycryptodome" />
