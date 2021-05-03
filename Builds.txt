@@ -26,7 +26,7 @@ preview="http://"
 adult="no"
 description="Shpitz AuraMod  My Mod V3 With changes TVShow,movies,kids movies dubbed into Hebrew and Subtitle Translation"
 
-ame="AuraMod Shpitz V4 My Mod One of the Best 18.9"
+name="AuraMod Shpitz V4 My Mod One of the Best 18.9"
 version="4.0"
 url="https://www.dropbox.com/s/fv001u9vceajl34/ShpitzAuraMod4.zip?dl=1"
 gui="http://"
