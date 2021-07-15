@@ -6,7 +6,7 @@ zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjX
 
 name="ArcticReloaded for Shpitz V1 My Mod Best One 18.9"
 version="1.0"
-url="https://www.dropbox.com/s/ed57w5281at4kk4/ShpitzReloaded18.zip?dl=1"
+url="https://www.dropbox.com/s/3l5i7xhfxn13mug/ShpitzReloaded18.zip?dl=1"
 gui="http://"
 kodi="18.9"
 theme="http://"
