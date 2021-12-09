@@ -1,4 +1,0 @@
-[B]Version 1.1.1[/B]
-- Initial version
-- update list of addons
-
