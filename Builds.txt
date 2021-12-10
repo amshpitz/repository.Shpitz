@@ -4,9 +4,9 @@ zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjX
 
 
 
-name="ArcticReloaded 1.1.62 MOD by Shpitz V1 Best One 19.3"
+name="ArcticReloaded 1.1.62 MOD by Shpitz V2 Best One 19.3"
 version="1.0"
-url="https://www.dropbox.com/s/lolub4bfdd9hoqh/Reloaded19_3.zip?dl=1"
+url="https://www.dropbox.com/s/48mqllkrr28v0v5/Reloaded193.zip?dl=1"
 gui="http://"
 kodi="19.3"
 theme="http://"
