@@ -1,18 +1,14 @@
-id="plugin.program.ShpitzTools"
-version="2.0"
-zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjXJP-eL"
-
-
-
-name="ArcticReloaded 1.1.62 MOD by Shpitz V2 Best One 19.3"
+name="ShpitzReloaded"
 version="1.0"
 url="https://www.dropbox.com/s/48mqllkrr28v0v5/Reloaded193.zip?dl=1"
+minor="http://"
 gui="http://"
 kodi="19.3"
 theme="http://"
-icon="https://github.com/amshpitz/repository.Shpitz/blob/master/Builds/icon.png?raw=true"
-fanart="http://xanbuilds.com/img/build/fanart.jpg"
+icon="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
+fanart="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
 preview="http://"
 adult="no"
+info="http://"
 description="Shpitz ArcticReloaded 19.3 My Mod V1 With changes TVShow,movies,kids movies dubbed into Hebrew and Subtitle Translation"
 
