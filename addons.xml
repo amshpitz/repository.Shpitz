@@ -1,0 +1,178 @@
+ <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<!--          from out zip folder         -->
+<!--          plugin.video            -->
+
+<addon id="plugin.video.shpitzyoutube" name="ShpitzYouTube" version="1.0.8" provider-name="ShpitzTV">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.youtube"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <language>he</language>
+    <summary lang="he">הרחבה לצפיה בסרטונים מיוטיוב</summary>
+    <description lang="he">הרחבה לצפיה בתכנים מיוטיוב</description>
+    <disclaimer lang="en">kodi Lahav Is Not Affiliated With The Content In This Addon</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<!--          plugin.program            -->
+
+
+
+<addon id="plugin.program.ShpitzTools19" name="ShpitzTools" version="0.1" provider-name="CHAMELEON,Shpitz">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" optional="true" />
+        <import addon="script.module.six" optional="true" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]Shpitz [/COLOR][COLOR yellow]-[/COLOR] [COLOR red]Wizard[/COLOR]</summary>
+        <description lang="en">[COLOR limegreen]Shpitz [/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.0
+ - Kodi 19 ready
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
+	<requires>
+	<import addon="xbmc.python" version="2.14.0"/>
+	<import addon="script.module.metahandler" optional="true"/>
+	</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video audio image executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup"/>
+	<extension point="xbmc.addon.metadata">
+	<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+	<description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+	<platform>all</platform>
+	<language>en</language>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+	<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+	<website/>
+	<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+	<email>seanpoyser at gmail.com</email>
+	<news> 1.0.59: 29th May 2017 - 'Now playing' text now defined by SF due to skin variations </news>
+	</extension>
+	<extension point="kodi.context.item">
+	<menu id="kodi.core.main">
+	<item library="capture.py">
+	<label>$ADDON[plugin.program.super.favourites 30002]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+	</item>
+	<item library="menu_addtofaves.py">
+	<label>$ADDON[plugin.program.super.favourites 30047]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+	</item>
+	<item library="menu_download.py">
+	<label>$ADDON[plugin.program.super.favourites 30259]</label>
+	<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+	</item>
+	</menu>
+	</extension>
+</addon>
+
+
+
+<!--          service.subtitles            -->
+
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.1"
+       provider-name="Subs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+
+  </requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+
+
+<!--          repository            -->
+
+<addon id="plugin.program.ShpitzWiz19" name="Shpitz Wizard 19" version="0.0.1" provider-name="Shpitz">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+    </requires>
+    
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR limegreen]Shpitz[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Shpitz[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
+        <news>
+2.0.0
+ - Kodi 19 ready
+ - Initial Commit
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
+        <extension point="xbmc.addon.repository" name="CPTV">
+                <info compressed="false">http://cha1m.com/oper1/addons.xml</info>
+                <checksum>http://cha1m.com/oper1/addons.xml.md5</checksum>
+                <datadir zip="true">http://cha1m.com/oper1/zips</datadir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+                <summary></summary>
+                <description lang="he"></description>
+                <disclaimer></disclaimer>
+                <platform>all</platform>
+        </extension>
+</addon>
+
+
+<!--          Skins        -->
+
+
+
+</addons>
