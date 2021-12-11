@@ -22,108 +22,6 @@
 
 <!--          plugin.program            -->
 
-
-
-<addon id="plugin.program.ShpitzTools19" name="ShpitzTools" version="0.1" provider-name="CHAMELEON,Shpitz">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" optional="true" />
-        <import addon="script.module.six" optional="true" />
-        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
-    </requires>
-    
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    
-    <extension point="xbmc.service" library="startup.py" start="startup" />
-    
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]Shpitz [/COLOR][COLOR yellow]-[/COLOR] [COLOR red]Wizard[/COLOR]</summary>
-        <description lang="en">[COLOR limegreen]Shpitz [/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
-        <platform>all</platform>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
-        <news>
-2.0.0
- - Kodi 19 ready
- - Initial Commit
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.60" provider-name="spoyser">
-	<requires>
-	<import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.module.metahandler" optional="true"/>
-	</requires>
-		<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video audio image executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="service.py" start="startup"/>
-	<extension point="xbmc.addon.metadata">
-	<summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-	<description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-	<platform>all</platform>
-	<language>en</language>
-	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-	<forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-	<website/>
-	<source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-	<email>seanpoyser at gmail.com</email>
-	<news> 1.0.59: 29th May 2017 - 'Now playing' text now defined by SF due to skin variations </news>
-	</extension>
-	<extension point="kodi.context.item">
-	<menu id="kodi.core.main">
-	<item library="capture.py">
-	<label>$ADDON[plugin.program.super.favourites 30002]</label>
-	<visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-	</item>
-	<item library="menu_addtofaves.py">
-	<label>$ADDON[plugin.program.super.favourites 30047]</label>
-	<visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-	</item>
-	<item library="menu_download.py">
-	<label>$ADDON[plugin.program.super.favourites 30259]</label>
-	<visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
-	</item>
-	</menu>
-	</extension>
-</addon>
-
-
-
-<!--          service.subtitles            -->
-
-<addon id="script.subskeys"
-       name="מקשים לכתוביות"
-       version="1.0.1"
-       provider-name="Subs">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.pyxbmct" version="1.1.4"/>
-
-  </requires>
-	<extension point="xbmc.python.script" library="default.py">
-		<provides>executable</provides>
-	</extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Keyboard map for subtitles</summary>
-    <language>en</language>
-    <description lang="en">Keyboard map for subtitles</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
-
-
-<!--          repository            -->
-
 <addon id="plugin.program.ShpitzWiz19" name="Shpitz Wizard 19" version="0.0.1" provider-name="Shpitz">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -155,6 +53,187 @@
         </assets>
     </extension>
 </addon>
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.1.0" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+  
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>!IsEmpty(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
+<!--          service.subtitles            -->
+
+<addon id="service.subtitles.All_Subs" name="All Subs Flash" version="2.4.5" provider-name="Sbs">
+  <requires>
+    
+	<import addon="script.module.requests" version="2.9.1" />
+	<import addon="script.common.plugin.cache" version="2.5.5"/>
+    <import addon="script.subskeys" version="1.0.1"/>
+	<import addon="script.module.chardet" />
+	
+  </requires>
+  <extension point="xbmc.service" library="autosub.py" start="startup"></extension> 
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">All sites Subs Super Speed</summary>
+    <description lang="en">All sites Subs. Subcenter.wizdom,subcene,opensubtitles. Thanks to:Catz,wizdom,manacker,amet</description>
+    <language>en</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="service.subtitles.a4ksubtitles"
+       name="a4kSubtitles"
+       version="2.8.0"
+       provider-name="Unknown">
+    <requires>
+      <import addon="script.module.requests"/>
+      <import addon="vfs.libarchive" optional="true"/>
+    </requires>
+    <extension point="xbmc.subtitle.module" library="main.py"/>
+    <extension point="xbmc.service" library="main_service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">a4kSubtitles - Multi-Source Subtitles Addon</summary>
+        <description>
+Multi-source subtitles addon optimized for Seren and a4kScrapers.
+Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
+        </description>
+        <platform>all</platform>
+        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <license>MIT License</license>
+        <website>https://github.com/newt-sc/a4kSubtitles</website>
+        <source>https://github.com/newt-sc/a4kSubtitles</source>
+        <assets>
+            <icon>icon.png</icon>
+            <screenshot>screenshot-01.png</screenshot>
+            <screenshot>screenshot-02.png</screenshot>
+            <screenshot>screenshot-03.png</screenshot>
+        </assets>
+        <news>
+[v2.8.0]:
+  * Support tvshows with more than 250 episodes for episode id lookup when tvshow imdb id is provided.
+
+[v2.7.0]:
+  * Support tvshow imdb id, along with season and episode passed from video file url.
+
+[v2.6.0]:
+  * Support imdb id (movie or episode) passed from video file url.
+
+[v2.5.0]:
+  * Add TLS adapter fallback
+
+[v2.4.0]:
+  * Fix some ssl issues
+
+[v2.3.0]:
+  * Add concurrency error handling
+
+[v2.2.0]:
+  * Fix KODI 19 Matrix support
+
+        </news>
+    </extension>
+</addon>
+
+
+<addon id="script.subskeys"
+       name="מקשים לכתוביות"
+       version="1.0.1"
+       provider-name="Subs">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.pyxbmct" version="1.1.4"/>
+
+  </requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Keyboard map for subtitles</summary>
+    <language>en</language>
+    <description lang="en">Keyboard map for subtitles</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+
+
+<!--          repository            -->
+
+
 
 <addon id="repository.Chameleon" name="[COLOR red]Chame[/COLOR][COLOR blue]leon[/COLOR] [COLOR yellow]TV[/COLOR] [COLOR green] Repository [/COLOR] " version="5.0.1" provider-name="Chameleon">
         <extension point="xbmc.addon.repository" name="CPTV">
