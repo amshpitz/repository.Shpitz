@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.program.Shpitzwiz" name="Shpitzwiz" version="0.2.0" provider-name="CHAMELEON,Shpitz">
+<addon id="plugin.program.ShpitzWiz19" name="Shpitz Wizard 19" version="0.0.1" provider-name="Shpitz">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.requests" optional="true" />
-        <import addon="script.module.six" optional="true" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
         <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
     </requires>
     
@@ -14,8 +14,8 @@
     <extension point="xbmc.service" library="startup.py" start="startup" />
     
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR limegreen]Shpitz [/COLOR][COLOR yellow]-[/COLOR] [COLOR red]Wizard[/COLOR]</summary>
-        <description lang="en">[COLOR limegreen]Shpitz [/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
+        <summary lang="en">[COLOR limegreen]Shpitz[/COLOR]Wizard</summary>
+        <description lang="en">[COLOR limegreen]Shpitz[/COLOR]Wizard offers many maintenance features, selective add-on data saving, and automated build installs.</description>
         <platform>all</platform>
         <reuselanguageinvoker>false</reuselanguageinvoker>
         <source>https://www.github.com/a4k-openproject/plugin.program.openwizard/</source>
