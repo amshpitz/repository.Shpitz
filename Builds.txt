@@ -1,4 +1,4 @@
-name="ShpitzReloaded19.3"
+name="ShpitzReloaded"
 version="1.0"
 url="https://www.dropbox.com/s/yngidd1s4po2p8i/Reloaded193.zip?dl=1"
 minor="http://"
@@ -11,4 +11,3 @@ preview="http://"
 adult="no"
 info="http://"
 description="Shpitz ArcticReloaded 19.3 My Mod V1 With changes TVShow,movies,kids movies dubbed into Hebrew and Subtitle Translation"
-
