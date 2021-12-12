@@ -22,7 +22,7 @@
 
 <!--          plugin.program            -->
 
-<addon id="plugin.program.ShpitzWiz19" name="Shpitz Wizard 19" version="0.0.1" provider-name="Shpitz">
+<addon id="plugin.program.ShpitzWiz19" name="Shpitz Wizard 19" version="0.0.2" provider-name="Shpitz">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.requests" />
