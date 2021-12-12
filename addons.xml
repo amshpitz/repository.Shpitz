@@ -211,10 +211,10 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
 
 <addon id="script.subskeys"
        name="מקשים לכתוביות"
-       version="1.0.1"
+       version="1.0.4"
        provider-name="Subs">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+  
 	<import addon="script.module.pyxbmct" version="1.1.4"/>
 
   </requires>
