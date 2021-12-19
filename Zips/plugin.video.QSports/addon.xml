@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.QSports"                                                                                                                                    
+	   name="[COLORwhite]Q Sports[/COLOR]"                                                 
+	   version="1.1.0"                                                                                                                                        
+	   provider-name="The Q">
+	<requires>
+		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
+		<import addon="script.module.beautifulsoup4" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+		<import addon="script.module.resolveurl" />
+		<import addon="script.module.dateutil"/>
+		<import addon="script.module.pytz"/>
+		<import addon="script.module.tzlocal"/>
+		<import addon="plugin.video.youtube" />
+		
+    	
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en"></summary>
+		<description lang="en">MIT License And Copyright Included In The Addon - This Addon Is A Modified Fork - All Credit Goes To The Original Creator
+We Do Not Host Any Of The Content - It Is All Freely Available On The Internet
+</description>
+		
+		<platform>all</platform>
+
+		<assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+	</extension>
+</addon>
