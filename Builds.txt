@@ -1,6 +1,6 @@
 name="ShpitzReloaded"
 version="3.0"
-url="https://www.dropbox.com/s/5ewbeq2vufoac26/ShpitzReloaded19.zip?dl=1"
+url="https://www.dropbox.com/s/wzbpfw59gofn1v8/Reloaded193_2.zip?dl=1"
 minor="http://"
 gui="http://"
 kodi="19.3"
