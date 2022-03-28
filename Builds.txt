@@ -42,7 +42,7 @@ description="Shpitz ArcticReloaded 19.4 My Mod V6 mini addons With changes live 
 
 name="Reloaded194 Build2 With Netflix"
 version="4.0"
-url="https://www.dropbox.com/s/1j2wfg313ru4xqx/Reloaded194A.zip?dl=1"
+url="https://www.dropbox.com/s/lt9rxmc5t30wk7j/Reloaded194B.zip?dl=1"
 minor="http://"
 gui="http://"
 kodi="19.3"
