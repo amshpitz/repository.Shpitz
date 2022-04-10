@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.diamond-wizard-repo-k19" name=" [COLORwhite]*[/COLOR][COLOR aqua]Diamond[/COLOR][COLOR silver] Build K19 Repo (Primary Server USA)[/COLOR][COLORwhite]*[/COLOR]" version="10.76" provider-name="Diamond Build">
+	<extension point="xbmc.addon.repository" name="Diamond Wizard Repo For Kodi 19 - Server 1 USA">
+	<dir>
+		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml</info>
+		<checksum>https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://diamondbuild.xyz/repository/diamond/diamond_build_repo_k19/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://diamondbuild.xyz/repository/diamond/diamond_build_back2thepass3/zips/addons.xml</info>
+		<checksum>https://diamondbuild.xyz/repository/diamond/diamond_build_back2thepass3/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://diamondbuild.xyz/repository/diamond/diamond_build_back2thepass3/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://k.slyguy.xyz/.repo/addons.xml</info>
+		<checksum>https://k.slyguy.xyz/.repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://k.slyguy.xyz/.repo/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://github.com/mhancoc7/kodi-addons/raw/master/_repo/addons.xml</info>
+		<checksum>https://github.com/mhancoc7/kodi-addons/raw/master/_repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/mhancoc7/kodi-addons/raw/master/_repo/</datadir>	
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+<summary lang="en">Diamond Build Repository For Kodi 19 - Server 1 USA</summary>
+<description lang="en">Educational use only, Diamond Build Repository For Kodi 19 - Server 1 USA</description>
+<disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+<platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+	</extension>
+</addon>
