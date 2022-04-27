@@ -1,6 +1,6 @@
-name="Seren The Oath shadow Netflix addons and Subtitle"
+name="Seren NightWing shadow Netflix addons and Subtitle"
 version="5.0"
-url="https://www.dropbox.com/s/tt7s792j45gu3me/Reloaded194H.zip?dl=1"
+url="https://www.dropbox.com/s/m4clc0yrviwawfw/Reloaded194K.zip?dl=1"
 minor="http://"
 gui="http://"
 kodi="19.4"
