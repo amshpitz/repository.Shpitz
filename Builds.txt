@@ -28,7 +28,7 @@ description="Shpitz ArcticReloaded 19.3 My Mod V4 mini addons With changes live 
 
 name="Reloaded194 With Netflix And Alvin"
 version="6.0"
-url="https://www.dropbox.com/s/spp410x80vtselr/Reloaded194L.zip?dl=0"
+url="https://www.dropbox.com/s/spp410x80vtselr/Reloaded194L.zip?dl=1"
 minor="http://"
 gui="http://"
 kodi="19.3"
