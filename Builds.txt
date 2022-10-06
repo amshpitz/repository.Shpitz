@@ -14,7 +14,7 @@ description="Shpitz ArcticReloaded 19.4 My Mod V6 With changes live TV,TVShow,mo
 
 name="TAZ19 Alvin Ezra Netflix Kids Deb addons and Subtitle"
 version="9.0"
-url="https://www.dropbox.com/s/ra903g37bbs13gm/Reloaded193Kids.zip?dl=1"
+url="https://www.dropbox.com/s/acy70xdesf8gpb4/Reloaded194Kids2.zip?dl=1"
 minor="http://"
 gui="http://"
 kodi="19.4"
