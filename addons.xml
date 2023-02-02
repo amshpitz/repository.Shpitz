@@ -382,47 +382,37 @@
   </extension>
 </addon>
 
-<addon id="service.subtitles.subscene"
-       name="Subscene.com"
-       version="1.9.12"
-       provider-name="wuff, jarmo, CrowleyAJ">
-    <requires>
-        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
-    </requires>
-    <extension point="xbmc.subtitle.module"
-               library="service.py"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Get subtitles from Subscene.com</summary>
-        <description lang="en">Subscene.com provides subtitles in more than 50 languages for TV-Series, Movies, and Music videos, phrase by phrase curated and perfected by users.[CR][CR]Note: Needs kodi-vfs-rar and/or kodi-vfs-libarchive addon to extract rar files.</description>
-        <disclaimer lang="en"/>
-        <platform>all</platform>
-        <language/>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>http://forum.xbmc.org/showthread.php?tid=184854</forum>
-        <website/>
-        <email/>
-        <source>https://github.com/AnonTester/service.subtitles.subscene</source>
-        <assets>
-            <icon>icon.png</icon>
-        </assets>
-        <news>
-1.9.12 (wuff)
-- add settings option to set debug level (default info)
-- reduced tvshow debug logging slightly
-
-1.9.11 (wuff)
-- add a lot of debug logging for tvshows
-
-1.9.10 (wuff)
-- add trailing slash and zip protocol to linux platform extract (for arm?)
-
-1.9.9 (wuff)
-- adjust http user-agent
-- retry 5 times to download subtitles before giving up gracefully
-        
-
-</news>
-    </extension>
+<addon id="service.subtitles.subsceneplus"
+       name="Subscene Subtitles"
+       version="1.2.9"
+       provider-name="Cih2001">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+    <import addon="script.module.requests" version="2.22.0+matrix.1"/>
+    <import addon="script.module.html5lib" version="1.0.1+matrix.2"/>
+    <import addon="vfs.libarchive" version="2.0.0"/>
+    <import addon="script.module.cloudscraper" version="1.2.60"/> 
+  </requires>
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Subscene.com Subtitles</summary>
+    <description lang="en_GB"> A convenient addon to download subtitles from subscene.com. If you find it useful, please consider giving it a star in github. This is being actively maintained. In case of any problem, feel free to open an issue on github.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-or-later</license>
+    <news>Version 1.2.*
+- New: Subscene domain name can be selected from the settings.
+Version 1.1.*
+- New: Subscene plus now works with TV shows.
+- New: When Movie/TV-show cannot be determined accurately, It allows you to select the correct one from a list.
+- New: Subtitles from archives with multiple items can be selected from a list.
+- Minor bugfixes
+	</news>
+    <source>https://github.com/Cih2001/KodiSubsceneAddon</source>
+    <assets>
+        <icon>logo.png</icon>
+    </assets>
+  </extension>
 </addon>
 
 
@@ -473,45 +463,26 @@ Supports: OpenSubtitles, BSPlayer, Podnadpisi.NET, Subscene, Addic7ed
     </extension>
 </addon>
 
-<addon id="script.theoath.artwork" version="1.1.0" name="TheOath Artwork" provider-name="host505">
-	<requires>
-		<!--<import addon="xbmc.python" version="2.19.0"/>-->
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary>Themes for the TheOath Addon</summary>
-		<description></description>
-		<platform>all</platform>
-	</extension>
-</addon>
 
-<addon id="script.module.oathscrapers" name="OathScrapers Module" version="1.03.05" provider-name="TheOath">
-    <requires>
-        <!--<import addon="xbmc.python" version="2.20.0" />-->
-        <import addon="script.module.beautifulsoup4" />
-        <import addon="script.module.requests" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.simplejson" />
-        <import addon="script.module.orion" optional="true" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py">
-        <provides>executable</provides>
-    </extension>
-        <extension point="xbmc.addon.metadata">
-            <platform>all</platform>
-            <summary lang="en">OathScrapers Module</summary>
-            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+<addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.66" provider-name="venomous">
+  <requires>
+    <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <assets>
-        <icon>icon.png</icon>
-        <fanart></fanart>
-    </assets>
-    <news></news>
-    </extension>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
 </addon>
 
 
