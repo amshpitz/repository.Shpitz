@@ -14,7 +14,7 @@ info="http://"
 description="Shpitz Reloaded 20.0 My Mod V16 With changes live TV,TVShow,movies,sport,music,Kids Deb and Subtitle Translation"
 
 
-name="EFN the promise Asgard WorldIPTV Kids Deb addons and Subtitle"
+name="EFN the promise WorldIPTV Kids Deb addons and Subtitle"
 version="17.0"
 url="https://www.dropbox.com/s/krngfxzl61tdzhg/kodi20B3.zip?dl=1"
 minor="http://"
