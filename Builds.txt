@@ -1,4 +1,6 @@
-
+id="plugin.program.shpitzwiz"
+version="1.9"
+zip="https://drive.google.com/uc?export=download&id=1d5sDqjakllGK6jFF_4LFJYNMdjXJP-eL"
 
 name="FEN ThePromise Sport Kids Deb addons and Subtitle minimum needed"
 version="16.0"
