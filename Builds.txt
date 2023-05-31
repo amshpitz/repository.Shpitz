@@ -1,4 +1,18 @@
 
+name="FEN ThePromise umbrella Sport Kids Deb addons and Subtitle minimum needed"
+version="19.0"
+url="https://www.dropbox.com/s/w3bxhqd4qg3daz9/kodi201.zip?dl=1"
+minor="http://"
+gui="http://"
+kodi="20.0"
+theme="http://"
+icon="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
+fanart="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
+preview="http://"
+adult="no"
+info="http://"
+description="Shpitz Reloaded 20.1 My Mod V19 With changes live TV,TVShow,movies,sport,music,Kids Deb and Subtitle Translation"
+
 name="FEN ThePromise Sport Kids Deb addons and Subtitle minimum needed"
 version="16.0"
 url="https://www.dropbox.com/s/8cyk9jvthju0l8o/kodi20A.zip?dl=1"
@@ -12,6 +26,7 @@ preview="http://"
 adult="no"
 info="http://"
 description="Shpitz Reloaded 20.0 My Mod V16 With changes live TV,TVShow,movies,sport,music,Kids Deb and Subtitle Translation"
+
 
 name="EFN the promise WorldIPTV Kids Deb addons and Subtitle"
 version="17.0"
