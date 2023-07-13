@@ -1,4 +1,18 @@
 
+name="FEN Alvin Sport Kids Deb addons and Subtitle minimum needed"
+version="21.0"
+url="https://www.dropbox.com/s/vohi4il3g8t4er4/kodi2020.zip?dl=1"
+minor="http://"
+gui="http://"
+kodi="20.0"
+theme="http://"
+icon="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
+fanart="http://www.ezzer-mac.com/sg/builds/NotFlix.png"
+preview="http://"
+adult="no"
+info="http://"
+description="Shpitz Reloaded 20.1 My Mod V20 With changes live TV,TVShow,movies,sport,music,Kids Deb and Subtitle Translation"
+
 name="FEN Umbrella Sport Kids Deb addons and Subtitle minimum needed"
 version="20.0"
 url="https://www.dropbox.com/s/uj401lubxjgyk31/kodi201A.zip?dl=1"
